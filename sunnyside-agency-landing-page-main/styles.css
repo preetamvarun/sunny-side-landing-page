@@ -100,7 +100,7 @@ body{
 
 /* STYLE THE FIRST SECTION OF THE WEBSITE */
 
-.part-1,.part-2{
+.part-1,.part-2,.part-3{
     display: flex;
 }
 
@@ -161,6 +161,47 @@ body{
 .standout .link a::after{
     background-color: var(--Soft-red);
 }
+
+.part-3 .left, .part-3 .right{
+    height : 500px;
+}
+
+.part-3 .left{
+    background: url('./images/desktop/image-graphic-design.jpg') center center;
+}
+
+.part-3 .right{
+    background: url('./images/desktop/image-photography.jpg') center center;
+}
+
+.part-3 .left, .part-3 .right{
+    display: flex;
+    align-items : flex-end;
+    justify-content: center;
+}
+
+.part-3 .left div,.part-3 .right div{
+    max-width : 60%;
+    margin-bottom: 1rem;
+}
+
+.part-3 .left div, .part-3 .right div{
+    text-align: center;
+}
+
+.part-3 .left div h1,.part-3 .right div h1{
+    font-family: var(--Fraunces);
+    font-weight: 700;
+}
+
+.part-3 .left div p, .part-3 .right div p{
+    padding : 1rem;
+    font-family: var(--Barlow);
+    font-weight: 600;
+    line-height: 1.5rem;
+    color : var(--Dark-desaturated-cyan);
+}
+
 
 /* .attribution { 
     font-size: 11px; 
