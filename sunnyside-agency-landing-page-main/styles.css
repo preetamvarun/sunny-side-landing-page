@@ -203,6 +203,8 @@ body{
 }
 
 
+/* NOW STYLE THE TESTIMONIALS SECTION */
+
 .test{
     text-align: center;
     color : var(--Grayish-blue);
@@ -243,6 +245,21 @@ body{
 .reviews span{
     font-family: var(--Barlow);
     color : var(--Dark-grayish-blue);
+}
+
+
+/* NOW STYLE THE IMAGES SECTION */
+.images-section{
+    display: flex;
+}
+
+.images-section img{
+    width : 100%;
+    height : 100%;
+}
+
+.img-1, .img-2,.img-3,.img-4{
+    flex:1;
 }
 
 
