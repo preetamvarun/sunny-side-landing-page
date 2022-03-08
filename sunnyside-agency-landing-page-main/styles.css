@@ -27,14 +27,14 @@ font-family: 'Barlow', sans-serif; */
 }
 
 body{
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 /* STYLING HEADER SECTION */
 
 .header{
     background: url('./images/desktop/image-header.jpg') no-repeat center center/cover;
-    height : 100vh;
+    height: 100vh;
 }
 
 /* STYLE THE NAVIGATION MENU */
@@ -263,12 +263,56 @@ body{
 }
 
 
-/* .attribution { 
-    font-size: 11px; 
-    text-align: center; 
+.footer ul{
+    list-style-type: none;
 }
 
-.attribution a {
-    color: hsl(228, 45%, 44%);
-} */
+.footer{
+    background-color: var(--Dark-moderate-cyan);
+    font-family: var(--Barlow);
+    font-weight: 600;
+}
 
+.footer h2{
+    text-align : center;
+    padding : 1.5rem 0rem;
+    color : var(--Dark-desaturated-cyan);
+    font-family: var(--Fraunces);
+}
+
+.footer ul{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
+.footer ul li{
+    padding : 0rem .5rem;
+}
+
+.footer ul li:hover > a{
+    color : var(--White);
+}
+
+.footer ul li a{
+    text-decoration: none;
+    display: inline-block;
+    color : var(--Dark-desaturated-cyan);
+    transition: all .5s ease;
+}
+
+.footer .icons{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+}
+
+.footer .icons img{
+    padding : .5rem;
+    transition: filter .5s ease;
+}
+
+.footer .icons img:hover{
+    cursor: pointer;
+    filter: brightness(400%) sepia(1);
+}
