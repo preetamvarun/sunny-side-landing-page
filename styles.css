@@ -395,11 +395,14 @@
         font-size : 1.5rem;
         font-family: var(--Barlow);
         font-weight: 700;
+        color : var(--Dark-grayish-blue);
+        transition: all .5s ease;
     } 
 
 
     .options-box a:hover{
         background-color: var(--Yellow);
+        color : var(--Dark-desaturated-cyan);
     }
 
     .options-box li:last-child{
