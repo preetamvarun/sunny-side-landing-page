@@ -473,7 +473,11 @@
     .header img{
         top : 70%;
     }
-    #down-arrow{
-        top : 80%;
+}
+
+@media (max-width : 655px) and (orientation : landscape){
+    .header img{
+        height : 70px;
+        top : 85%;
     }
 }
