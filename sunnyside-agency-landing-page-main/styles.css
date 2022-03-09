@@ -156,10 +156,15 @@
     bottom : -2.5px;
     transform: translateX(-100%);
     border-radius: 20px;
+    transition: all .5s ease;
 }
 
 .standout .link a::after{
     background-color: var(--Soft-red);
+}
+
+.transform .link a:hover::after,.standout .link a:hover::after{
+    padding : 3px;
 }
 
 .part-3 .left, .part-3 .right{
@@ -357,7 +362,7 @@
         z-index : 100;
         width : 85%;
         opacity: 0;
-        transition: opacity 1s ease;
+        transition: opacity .75s ease;
     }
 
     .options-box.show-options-box{
@@ -381,6 +386,7 @@
         text-align: center;
     } 
 
+
     .options-box a{
         text-decoration : none;
         display: inline-block;
@@ -390,6 +396,11 @@
         font-family: var(--Barlow);
         font-weight: 700;
     } 
+
+
+    .options-box a:hover{
+        background-color: var(--Yellow);
+    }
 
     .options-box li:last-child{
         margin-bottom : 3rem;
