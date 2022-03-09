@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
 
-/* font-family: 'Fraunces', serif; 
-font-family: 'Barlow', sans-serif; */
-
-
 *,*::after,*::before{
     margin : 0rem;
     padding : 0rem;
@@ -25,6 +21,7 @@ font-family: 'Barlow', sans-serif; */
     --Barlow : 'Barlow', sans-serif; 
     --Fraunces : 'Fraunces', serif;
 }
+
 /* STYLING HEADER SECTION */
 .header{
     background: url('./images/desktop/image-header.jpg') no-repeat center center/cover;
@@ -177,7 +174,7 @@ font-family: 'Barlow', sans-serif; */
 
 .part-3 .left div,.part-3 .right div{
     max-width : 70%;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
     text-align: center;
 }
 
@@ -376,4 +373,17 @@ font-family: 'Barlow', sans-serif; */
         grid-template-columns: 1fr 1fr;
     }
 
+}
+
+
+@media (max-width : 850px){
+    .standout .link{
+        margin-bottom : .75rem;
+    }
+}
+
+@media (max-width : 950px) and (orientation : landscape){
+    .header img{
+        top : 70%;
+    }
 }
