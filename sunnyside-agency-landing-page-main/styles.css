@@ -5,7 +5,7 @@
 font-family: 'Barlow', sans-serif; */
 
 
-*,*:after,*:before{
+*,*::after,*::before{
     margin : 0rem;
     padding : 0rem;
     box-sizing: border-box;
@@ -25,16 +25,11 @@ font-family: 'Barlow', sans-serif; */
     --Barlow : 'Barlow', sans-serif; 
     --Fraunces : 'Fraunces', serif;
 }
-
-body{
-    overflow-x: hidden;
-}
-
 /* STYLING HEADER SECTION */
-
 .header{
     background: url('./images/desktop/image-header.jpg') no-repeat center center/cover;
     height: 100vh;
+    width: 100%;
 }
 
 /* STYLE THE NAVIGATION MENU */
@@ -181,11 +176,8 @@ body{
 }
 
 .part-3 .left div,.part-3 .right div{
-    max-width : 60%;
+    max-width : 70%;
     margin-bottom: 1rem;
-}
-
-.part-3 .left div, .part-3 .right div{
     text-align: center;
 }
 
@@ -219,13 +211,26 @@ body{
     text-align: center;
     padding : 3rem;
     padding-bottom: 6rem;
+    justify-content: space-between;
+}
+
+
+.review-1, .review-2, .review-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.review-1 div, .review-2 div, .review-3 div{
+    margin-top: 1.5rem;
 }
 
 .reviews p{
-    padding : 2.25rem 2rem;
     line-height: 1.5rem;
     font-size : .95rem;
     font-weight: 600;
+    width : 80%;
     font-family: var(--Barlow);
     color : var(--Very-dark-grayish-blue);
 }
@@ -234,6 +239,7 @@ body{
     height : 75px;
     width : 75px;
     border-radius : 100px;
+    margin-bottom: 3rem;
 }
 
 .reviews h3{
@@ -315,4 +321,59 @@ body{
 .footer .icons img:hover{
     cursor: pointer;
     filter: brightness(400%) sepia(1);
+}
+
+@media (max-width : 500px){
+
+    html,body{
+        overflow-x: hidden;
+    }
+
+    .header img{
+        position: absolute;
+        top : 50%;
+        left : 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .part-1{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .transform, .standout{
+        padding : 2.5rem 0rem;
+    }
+
+    .transform .headings, .standout .headings{
+        font-size: .9rem;
+    }
+
+    .part-2,.part-3{
+        display: flex;
+        flex-direction: column;
+    }
+    .part-3 .left,.part-3 .right{
+        padding : 18rem 0rem 1rem 0rem;
+    }
+    .part-3 .left div,.part-3 .right div{
+        margin-bottom: 0rem;
+    }
+
+    /* NOW WRITE MEDIA QUERIES FOR CLIENT TESTIMONIALS PART */
+    .reviews{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .review-2{
+        margin : 5rem 0rem;
+    }
+
+    /* NOW WRITE MEDIA QUERIES FOR IMAGES SECTION */
+    .images-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
