@@ -7,4 +7,4 @@ This is a front end mentor challenge
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 ## live-demo ⏬
-https://fylo-landing-page-frontendmentor.netlify.app/
+https://preetamvarun.github.io/sunny-side-landing-page/
