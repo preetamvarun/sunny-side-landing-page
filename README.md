@@ -9,4 +9,4 @@ This is a front end mentor challenge
 ## live-demo ⏬
 https://preetamvarun.github.io/sunny-side-landing-page/
 
-# possible update : change in styling for the navbar.
+
